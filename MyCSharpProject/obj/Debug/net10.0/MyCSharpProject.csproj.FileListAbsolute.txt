@@ -1,0 +1,14 @@
+C:\oop\MyCSharpProject\bin\Debug\net10.0\MyCSharpProject.exe
+C:\oop\MyCSharpProject\bin\Debug\net10.0\MyCSharpProject.deps.json
+C:\oop\MyCSharpProject\bin\Debug\net10.0\MyCSharpProject.runtimeconfig.json
+C:\oop\MyCSharpProject\bin\Debug\net10.0\MyCSharpProject.dll
+C:\oop\MyCSharpProject\bin\Debug\net10.0\MyCSharpProject.pdb
+C:\oop\MyCSharpProject\obj\Debug\net10.0\MyCSharpProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\oop\MyCSharpProject\obj\Debug\net10.0\MyCSharpProject.AssemblyInfoInputs.cache
+C:\oop\MyCSharpProject\obj\Debug\net10.0\MyCSharpProject.AssemblyInfo.cs
+C:\oop\MyCSharpProject\obj\Debug\net10.0\MyCSharpProject.csproj.CoreCompileInputs.cache
+C:\oop\MyCSharpProject\obj\Debug\net10.0\MyCSharpProject.dll
+C:\oop\MyCSharpProject\obj\Debug\net10.0\refint\MyCSharpProject.dll
+C:\oop\MyCSharpProject\obj\Debug\net10.0\MyCSharpProject.pdb
+C:\oop\MyCSharpProject\obj\Debug\net10.0\MyCSharpProject.genruntimeconfig.cache
+C:\oop\MyCSharpProject\obj\Debug\net10.0\ref\MyCSharpProject.dll
