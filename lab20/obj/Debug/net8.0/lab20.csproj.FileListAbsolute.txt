@@ -1,0 +1,5 @@
+C:\oop\lab20\obj\Debug\net8.0\lab20.GeneratedMSBuildEditorConfig.editorconfig
+C:\oop\lab20\obj\Debug\net8.0\lab20.AssemblyInfoInputs.cache
+C:\oop\lab20\obj\Debug\net8.0\lab20.AssemblyInfo.cs
+C:\oop\lab20\obj\Debug\net8.0\lab20.csproj.CoreCompileInputs.cache
+C:\oop\lab20\obj\Debug\net8.0\lab20.sourcelink.json

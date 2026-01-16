@@ -1,0 +1,5 @@
+C:\oop\lab2\obj\Debug\net8.0\lab2.GeneratedMSBuildEditorConfig.editorconfig
+C:\oop\lab2\obj\Debug\net8.0\lab2.AssemblyInfoInputs.cache
+C:\oop\lab2\obj\Debug\net8.0\lab2.AssemblyInfo.cs
+C:\oop\lab2\obj\Debug\net8.0\lab2.csproj.CoreCompileInputs.cache
+C:\oop\lab2\obj\Debug\net8.0\lab2.sourcelink.json
