@@ -1,0 +1,12 @@
+C:\oop\lab2\bin\Debug\net10.0\lab2.deps.json
+C:\oop\lab2\bin\Debug\net10.0\lab2.dll
+C:\oop\lab2\bin\Debug\net10.0\lab2.pdb
+C:\oop\lab2\obj\Debug\net10.0\lab2.GeneratedMSBuildEditorConfig.editorconfig
+C:\oop\lab2\obj\Debug\net10.0\lab2.AssemblyInfoInputs.cache
+C:\oop\lab2\obj\Debug\net10.0\lab2.AssemblyInfo.cs
+C:\oop\lab2\obj\Debug\net10.0\lab2.csproj.CoreCompileInputs.cache
+C:\oop\lab2\obj\Debug\net10.0\lab2.sourcelink.json
+C:\oop\lab2\obj\Debug\net10.0\lab2.dll
+C:\oop\lab2\obj\Debug\net10.0\refint\lab2.dll
+C:\oop\lab2\obj\Debug\net10.0\lab2.pdb
+C:\oop\lab2\obj\Debug\net10.0\ref\lab2.dll
