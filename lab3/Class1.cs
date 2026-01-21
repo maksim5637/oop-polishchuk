@@ -67,7 +67,7 @@ namespace Lab3Namespace
 
             Console.WriteLine("=== Список фільмів ===");
             foreach (var movie in movies)
-                movie.ShowInfo(); // Виклик перевизначених методів
+                movie.ShowInfo(); 
 
             double avgAction = movies.OfType<ActionMovie>().Average(m => m.Rating);
             double avgComedy = movies.OfType<ComedyMovie>().Average(m => m.Rating);
