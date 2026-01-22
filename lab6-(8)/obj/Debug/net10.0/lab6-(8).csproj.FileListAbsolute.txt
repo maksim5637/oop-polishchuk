@@ -1,0 +1,15 @@
+C:\oop\lab6-(8)\bin\Debug\net10.0\lab6-(8).exe
+C:\oop\lab6-(8)\bin\Debug\net10.0\lab6-(8).deps.json
+C:\oop\lab6-(8)\bin\Debug\net10.0\lab6-(8).runtimeconfig.json
+C:\oop\lab6-(8)\bin\Debug\net10.0\lab6-(8).dll
+C:\oop\lab6-(8)\bin\Debug\net10.0\lab6-(8).pdb
+C:\oop\lab6-(8)\obj\Debug\net10.0\lab6-(8).GeneratedMSBuildEditorConfig.editorconfig
+C:\oop\lab6-(8)\obj\Debug\net10.0\lab6-(8).AssemblyInfoInputs.cache
+C:\oop\lab6-(8)\obj\Debug\net10.0\lab6-(8).AssemblyInfo.cs
+C:\oop\lab6-(8)\obj\Debug\net10.0\lab6-(8).csproj.CoreCompileInputs.cache
+C:\oop\lab6-(8)\obj\Debug\net10.0\lab6-(8).sourcelink.json
+C:\oop\lab6-(8)\obj\Debug\net10.0\lab6-(8).dll
+C:\oop\lab6-(8)\obj\Debug\net10.0\refint\lab6-(8).dll
+C:\oop\lab6-(8)\obj\Debug\net10.0\lab6-(8).pdb
+C:\oop\lab6-(8)\obj\Debug\net10.0\lab6-(8).genruntimeconfig.cache
+C:\oop\lab6-(8)\obj\Debug\net10.0\ref\lab6-(8).dll
