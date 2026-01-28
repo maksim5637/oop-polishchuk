@@ -1,0 +1,15 @@
+C:\oop\lab21\bin\Debug\net10.0\lab21.deps.json
+C:\oop\lab21\bin\Debug\net10.0\lab21.dll
+C:\oop\lab21\bin\Debug\net10.0\lab21.pdb
+C:\oop\lab21\obj\Debug\net10.0\lab21.GeneratedMSBuildEditorConfig.editorconfig
+C:\oop\lab21\obj\Debug\net10.0\lab21.AssemblyInfoInputs.cache
+C:\oop\lab21\obj\Debug\net10.0\lab21.AssemblyInfo.cs
+C:\oop\lab21\obj\Debug\net10.0\lab21.csproj.CoreCompileInputs.cache
+C:\oop\lab21\obj\Debug\net10.0\lab21.sourcelink.json
+C:\oop\lab21\obj\Debug\net10.0\lab21.dll
+C:\oop\lab21\obj\Debug\net10.0\refint\lab21.dll
+C:\oop\lab21\obj\Debug\net10.0\lab21.pdb
+C:\oop\lab21\obj\Debug\net10.0\ref\lab21.dll
+C:\oop\lab21\bin\Debug\net10.0\lab21.exe
+C:\oop\lab21\bin\Debug\net10.0\lab21.runtimeconfig.json
+C:\oop\lab21\obj\Debug\net10.0\lab21.genruntimeconfig.cache
