@@ -1,0 +1,15 @@
+C:\oop\lab22\obj\Debug\net10.0\lab22.GeneratedMSBuildEditorConfig.editorconfig
+C:\oop\lab22\obj\Debug\net10.0\lab22.AssemblyInfoInputs.cache
+C:\oop\lab22\obj\Debug\net10.0\lab22.AssemblyInfo.cs
+C:\oop\lab22\obj\Debug\net10.0\lab22.csproj.CoreCompileInputs.cache
+C:\oop\lab22\obj\Debug\net10.0\lab22.sourcelink.json
+C:\oop\lab22\bin\Debug\net10.0\lab22.exe
+C:\oop\lab22\bin\Debug\net10.0\lab22.deps.json
+C:\oop\lab22\bin\Debug\net10.0\lab22.runtimeconfig.json
+C:\oop\lab22\bin\Debug\net10.0\lab22.dll
+C:\oop\lab22\bin\Debug\net10.0\lab22.pdb
+C:\oop\lab22\obj\Debug\net10.0\lab22.dll
+C:\oop\lab22\obj\Debug\net10.0\refint\lab22.dll
+C:\oop\lab22\obj\Debug\net10.0\lab22.pdb
+C:\oop\lab22\obj\Debug\net10.0\lab22.genruntimeconfig.cache
+C:\oop\lab22\obj\Debug\net10.0\ref\lab22.dll
