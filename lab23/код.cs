@@ -37,8 +37,7 @@ namespace Lab23
     // Головний клас (тепер залежить від абстракцій, а не конкретних класів)
     public class HeroAction
     {
-        private readonly IWeapon weapon;
-        private readonly IHealable healer;
+        private readonly IWeapon weapon;       private readonly IHealable healer;
         private readonly IDialogue dialogue;
 
         // Dependency Injection через конструктор

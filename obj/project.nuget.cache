@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3ZAB1QhvIk8=",
-  "success": false,
-  "projectFilePath": "c:\\oop\\oop.csproj",
+  "dgSpecHash": "GmmmW+9kbpE=",
+  "success": true,
+  "projectFilePath": "C:\\oop\\oop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Максік ЛОХ\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\Максік ЛОХ\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
@@ -31,19 +31,10 @@
     "C:\\Users\\Максік ЛОХ\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\Максік ЛОХ\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\8.0.0\\microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
     "C:\\Users\\Максік ЛОХ\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "C:\\Users\\Максік ЛОХ\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512"
+    "C:\\Users\\Максік ЛОХ\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "C:\\Users\\Максік ЛОХ\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
+    "C:\\Users\\Максік ЛОХ\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\Максік ЛОХ\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  oop -> oop.",
-      "projectPath": "c:\\oop\\oop.csproj",
-      "filePath": "c:\\oop\\oop.csproj",
-      "libraryId": "oop",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "logs": []
 }

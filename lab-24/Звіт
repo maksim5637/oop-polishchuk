@@ -1,0 +1,138 @@
+# Лабораторна робота №24
+**Тема:** Паттерни Strategy та Observer  
+**Мета:** Розуміти та застосовувати поведінкові паттерни для динамічної зміни алгоритмів та реактивного оповіщення про змінення стану.
+
+---
+
+## 1. Паттерн Strategy
+
+### Визначення та призначення:
+**Strategy** - поведінковий паттерн, що дозволяє визначити сімейство алгоритмів, інкапсулювати кожен з них та зробити їх взаємозамінюваними. Он спрощує вибір алгоритму в процесі виконання.
+
+### Реалізація в коді:
+
+#### Інтерфейс стратегії:
+```csharp
+public interface INumericOperationStrategy
+{
+    double Execute(double value);
+    string Name { get; }
+}
+```
+
+#### Конкретні стратегії:
+- **SquareOperationStrategy** - піднесення в квадрат
+- **CubeOperationStrategy** - піднесення в куб
+- **SquareRootOperationStrategy** - витяг квадратного кореня
+
+#### Контекст (NumericProcessor):
+```csharp
+public class NumericProcessor
+{
+    private INumericOperationStrategy _strategy;
+    
+    public void SetStrategy(INumericOperationStrategy strategy)
+    {
+        _strategy = strategy;  // Динамічна зміна алгоритму
+    }
+    
+    public double Process(double input)
+    {
+        return _strategy.Execute(input);  // Використання поточної стратегії
+    }
+}
+```
+
+### Переваги реалізації:
+- ✅ **Гнучкість**: Легко додати нові операції без зміни класу NumericProcessor
+- ✅ **Чистота коду**: Видалена сложна логіка розгалуження (if/switch)
+- ✅ **Розширюваність**: Нові стратегії можуть бути додані без змін існуючого коду
+- ✅ **Тестовність**: Кожна стратегія тестується окремо
+
+---
+
+## 2. Паттерн Observer
+
+### Визначення та призначення:
+**Observer** - поведінковий паттерн, що встановлює залежність "один-до-багатьох" так, що при зміні стану одного об'єкта всі залежні від нього об'єкти автоматично оновлюються.
+
+### Реалізація в коді:
+
+#### Publisher (видавець):
+```csharp
+public class ResultPublisher
+{
+    public event Action<double, string> ResultCalculated = delegate { };
+    
+    public void PublishResult(double result, string operationName)
+    {
+        ResultCalculated?.Invoke(result, operationName);  // Сповіщення спостерігачів
+    }
+}
+```
+
+#### Спостерігачі (Observers):
+1. **ConsoleLoggerObserver** - логує результати в консоль
+2. **HistoryLoggerObserver** - зберігає історію обчислень
+3. **ThresholdNotifierObserver** - оповіщує коли результат перевищує поріг
+
+#### Підписування спостерігачів:
+```csharp
+publisher.ResultCalculated += consoleLogger.OnResultCalculated;
+publisher.ResultCalculated += historyLogger.OnResultCalculated;
+publisher.ResultCalculated += thresholdNotifier.OnResultCalculated;
+```
+
+### Переваги реалізації:
+- ✅ **Слабка зв'язаність**: Publisher не знає деталей спостерігачів
+- ✅ **Динамічне приєднання**: Спостерігачі можуть бути додані/видалені в runtime
+- ✅ **Розділення відповідальності**: Кожен спостерігач має одну мету
+- ✅ **Масштабованість**: Легко додати нові типи спостерігачів
+
+---
+
+## 3. Взаємодія паттернів
+
+У цій роботі Strategy та Observer працюють разом:
+
+```
+NumericProcessor (Strategy Context)
+    ↓ вибір стратегії ↓
+[Стратегія 1, 2, 3...]
+    ↓ обчислення результату ↓
+ResultPublisher (Observable)
+    ↓ сповіщення ↓
+[Observer 1] [Observer 2] [Observer 3]
+```
+
+**Потік виконання:**
+1. NumericProcessor змінює стратегію через `SetStrategy()`
+2. Обраховується результат через поточну стратегію
+3. ResultPublisher оповіщує всіх спостерігачів через event
+4. Кожен спостерігач реагує на оповіщення незалежно
+
+---
+
+## 4. Демонстрація рахунку
+
+**Вхідні дані:** числа 4, 10, 25
+
+**Операції:**
+1. Square (квадрат): 16, 100, 625
+2. Cube (куб): 64, 1000, 15625
+3. Square Root (корінь): 2, 3.16, 5
+
+**Спостерігання:**
+- ConsoleLogger виводить кожен результат
+- HistoryLogger накопичує всі результати
+- ThresholdNotifier оповіщує коли результат > 50
+
+---
+
+## Висновки
+
+Паттерни **Strategy** та **Observer** - це фундаментальні інструменти для написання гнучкого, модульного коду:
+- Strategy дозволяє динамічно змінювати алгоритми
+- Observer дозволяє реактивно реагувати на події
+- Разом вони утворюють потужну базу для розширяємих систем
+
