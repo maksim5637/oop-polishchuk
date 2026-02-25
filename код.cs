@@ -27,14 +27,3 @@ public class Library
         Console.WriteLine($"Бібліотека: {name}, Адреса: {address}, Книг: {BooksCount}");
     }
 }
-
-partial class Program
-{
-    static void Main(string[] args)
-    {
-        Library lib = new Library("Центральна бібліотека", "м. Рівне, вул. Соборна, 12");
-        lib.AddBook("Кобзар");
-        lib.AddBook("Місто");
-        lib.PrintInfo();
-    }
-}
