@@ -1,0 +1,75 @@
+# Лабораторна робота №26
+**Тема:** Патерн Factory Method, Singleton, Strategy, Observer  
+**Мета:** Продемонструвати знання оригінальних патернів проектування та їхню інтегровану роботу у прикладі обробки і логування даних.
+
+---
+
+## 1. Factory Method
+
+- **Інтерфейс**: `ILogger` (метод `Log(string message)`).
+- **Конкретні реалізації**: `ConsoleLogger`, `FileLogger`.
+- **Абстрактна фабрика**: `LoggerFactory` з абстрактним `CreateLogger()`.
+- **Фабрики**: `ConsoleLoggerFactory`, `FileLoggerFactory`.
+
+### Суть
+Factory Method інкапсулює створення об'єктів логерів. Клієнт викликає `CreateLogger()` на фабриці, не знаючи конкретної реалізації.
+
+---
+
+## 2. Singleton
+
+- **Клас**: `LoggerManager`.
+- **Особливості**:
+  - приватний статичний екземпляр `_instance`.
+  - потокобезпечний подвійний-checked locking `_lock`.
+  - метод `GetInstance(LoggerFactory? factory = null)` для отримання єдиного екземпляра.
+  - метод `SetFactory(LoggerFactory factory)` для динамічної заміни фабрики/логера.
+  - метод `Log(string message)` як фасад.
+
+### Суть
+Singleton гарантує єдину точку доступу до менеджера логування, дозволяє змінювати реалізацію логера під час виконання.
+
+---
+
+## 3. Strategy
+
+- **Інтерфейс**: `IDataProcessorStrategy` (метод `Process(string data)`).
+- **Конкретні стратегії**:
+  - `EncryptDataStrategy` (Base64-шифрування),
+  - `CompressDataStrategy` (реверс рядка).
+- **Контекст**: `DataContext` з полем `_strategy`, методами `SetStrategy(...)` та `ExecuteProcessing(data)`.
+
+### Суть
+Strategy дозволяє змінювати алгоритм обробки даних «на льоту» без зміни класу-клієнта.
+
+---
+
+## 4. Observer
+
+- **Аргументи події**: `DataProcessedEventArgs`.
+- **Publisher**: `DataPublisher` з подією `DataProcessed`.
+- **Observer**: `ProcessingLoggerObserver`, що підписується на `DataProcessed` та логуватиме через `LoggerManager`.
+
+### Суть
+Observer забезпечує реактивний виклик логування при кожному завершенні обробки даних із DataPublisher.
+
+---
+
+## 5. Демонстраційний сценарій
+
+1. Сценарій 1 (ConsoleLogger + EncryptDataStrategy + Observer)
+2. Сценарій 2 (зміна фабрики на FileLoggerFactory, показ динамічної зміни логера)
+3. Сценарій 3 (зміна стратегії на CompressDataStrategy)
+
+Результат: оброблені дані публікуються і логуються одночасно, зберігається принцип розблоковки залежностей.
+
+---
+
+## 6. Висновок
+
+Робота демонструє єдину архітектуру, де:
+- Factory Method і Singleton керують створенням та доступом до логера;
+- Strategy керує алгоритмами обробки даних;
+- Observer забезпечує реактивну поведінку on-update.
+
+Це показує розуміння патернів і їх застосування у реальному сценарії.
